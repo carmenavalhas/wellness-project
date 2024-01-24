@@ -1,7 +1,48 @@
-.the-title {
-  color: salmon;
-  padding: 20px;
-  width: 30px;
-  background: burlywood;
-  border: 2px solid #657465;
+:root {
+  --main-branding-color: #885df1;
 }
+
+
+h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.coluna1 {
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  background: var(--main-branding-color)
+}
+
+
+#calendario {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+margin-top: 20px;
+}
+
+.calendly-inline-widget {
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contactme {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.back-btn {
+  padding: 4px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-branding-color);
+  border-radius: 50px;
+}
+
+
