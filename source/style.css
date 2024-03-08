@@ -2,17 +2,72 @@
   --main-branding-color: #885df1;
 }
 
+.hero {
+  background-image: url("/source/images/background-1.jpg");
+  filter: opacity(0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+  background-position: center;
+}
+
+.hero h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 8px;
+}
+
+.hero h4 {
+  color: wheat;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 12px;
+}
+
+.enter-button {
+  text-decoration: none;
+  background: wheat;
+  color: var(--main-color);
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 35px;
+  align-items: center;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.enter-button:hover {
+  background: white;
+  color: wheat;
+
+}
+
+
+
 /* ------> NAVBAR <------*/
 
 .navbar-toggler {
   margin: 20px auto 0 auto;
-  background: var(--main-blue);
+  background: red !important;
   text-align: center;
   padding: 6px;
 }
 
 .navbar-toggler:hover {
-  border: none;
+  border: none !important;
 
 }
 .navbar-nav {
