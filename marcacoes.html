@@ -14,12 +14,12 @@
       src="https://kit.fontawesome.com/fb6fedba3f.js"
       crossorigin="anonymous"
     ></script>
-    <title>Wellness - sobre</title>
+    <title>Wellness - Marcações</title>
   </head>
   <body>
     <div class="container">
       <div class="nav-row d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="navbar">
           <button
             class="navbar-toggler"
             type="button"
@@ -56,6 +56,15 @@
                 <a
                   class="nav-link nav-link menu"
                   aria-current="page"
+                  href="/sobre.html"
+                  title="Sobre"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link menu"
+                  aria-current="page"
                   href="/marcacoes.html"
                   title="Marcações"
                   >Marcações</a
@@ -75,34 +84,50 @@
           </div>
         </nav>
       </div>
+
       <div class="nav-row d-flex justify-content-center">
         <div class="col-6">
           <h1>MARCAÇÕES</h1>
         </div>
       </div>
-      <h1>Faça a sua marcação</h1>
+      <h5 class="text-center mb-4">Faça a sua marcação</h5>
 
-      <div class="row d-flex justify-content-center"></div>
-      <!-- Widget em linha do Calendly - início -->
-      <div
-        class="calendly-inline-widget"
-        data-url="https://calendly.com/mybeautyclinic/"
-        style="min-width: 200px; height: 600px"
-      ></div>
-      <script
-        type="text/javascript"
-        src="https://assets.calendly.com/assets/external/widget.js"
-        async
-      ></script>
-      <!-- Widget em linha do Calendly - fim -->
       <div class="row d-flex justify-content-center">
-        <a
-          target="_blank"
-          class="back-btn text-center col-2 m-2"
-          href="/index.html"
-          >Voltar ao ínicio</a
-        >
+        <div class="col-8 booking mb-5">
+          <!-- Widget em linha do Calendly - início -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/mybeautyclinic/"
+            style="min-width: 200px; height: 400px"
+          ></div>
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
+          <!-- Widget em linha do Calendly - fim -->
+        </div>
+      </div>
+      <div class="icon-bar">
+        <a href="#navbar" class="gotop"
+          ><i class="fa-solid fa-arrow-up-long"></i
+        ></a>
+        <a href="#footer" class="godown"
+          ><i class="fa-solid fa-arrow-down-long"></i
+        ></a>
       </div>
     </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-12 codeb-by text-center text-muted" id="footer">
+          2024 ⎪ Todos os direitos reservados. All rights reserved.
+          <br />Website desenvolvido por/Website developed by
+          <a href="https://www.hajacriatividade.pt/" target="_blank"
+            >Haja Criatividade <i class="fa-regular fa-lightbulb"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

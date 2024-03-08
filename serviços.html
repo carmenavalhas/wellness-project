@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <div class="nav-row d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg" id="navbar">
+        <nav class="navbar navbar-expand-lg">
           <button
             class="navbar-toggler"
             type="button"
@@ -56,15 +56,6 @@
                 <a
                   class="nav-link nav-link menu"
                   aria-current="page"
-                  href="/sobre.html"
-                  title="Sobre"
-                  >Serviços</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link nav-link menu"
-                  aria-current="page"
                   href="/marcacoes.html"
                   title="Marcações"
                   >Marcações</a
@@ -84,22 +75,35 @@
           </div>
         </nav>
       </div>
-      <div class="row d-flex justify-content-center" id="sobre">
-        <div class="col-6 text-center">
-          <h1>Contacto</h1>
+      <div class="nav-row d-flex justify-content-center">
+        <div class="col-6">
+          <h1>MARCAÇÕES</h1>
         </div>
       </div>
+      <h1>Faça a sua marcação</h1>
 
-      <div class="icon-bar">
-        <a href="#sobre" class="gotop"
-          ><i class="fa-solid fa-arrow-up-long"></i
-        ></a>
-        <a href="#footer" class="godown"
-          ><i class="fa-solid fa-arrow-down-long"></i
-        ></a>
+      <div class="row d-flex justify-content-center"></div>
+      <!-- Widget em linha do Calendly - início -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/mybeautyclinic/"
+        style="min-width: 200px; height: 600px"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      ></script>
+      <!-- Widget em linha do Calendly - fim -->
+      <div class="row d-flex justify-content-center">
+        <a
+          target="_blank"
+          class="back-btn text-center col-2 m-2"
+          href="/index.html"
+          >Voltar ao ínicio</a
+        >
       </div>
     </div>
-
     <footer>
       <div class="row">
         <div class="col-12 codeb-by text-center text-muted" id="footer">
