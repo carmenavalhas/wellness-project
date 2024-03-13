@@ -1,5 +1,9 @@
 :root {
-  --main-branding-color: #885df1;
+  --main-branding-color: #FBF9F3;
+  --secondary-color: #D5D1CB;
+  --main-font-family: "Cormorant", serif;
+  --second-font-family: "Montserrat", sans-serif;
+  --content-font-family: "PT Serif", serif;   
 }
 
 .hero {
@@ -18,51 +22,58 @@
   background-position: center;
 }
 
-.hero h1 {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 70px;
-  letter-spacing: 8px;
+.intro {
+  margin-top: 40px;
 }
 
-.hero h4 {
-  color: wheat;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 12px;
+.hero h1 {
+  font-family: var(--main-font-family);
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-family: var(--second-font-family);
+  line-height: 20px;
+  font-weight: 200;
+  margin: 10px auto 10px auto;
+  color: #ffffff;
+  font-size: 15px;
 }
 
 .enter-button {
   text-decoration: none;
-  background: wheat;
-  color: var(--main-color);
-  font-weight: 600;
+  background: var(--main-branding-color);
+  color: #000000;
+  font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 18px;
-  padding: 10px 35px;
-  align-items: center;
+  font-size: 10px;
+  padding: 10px;
   border: none;
-  margin-top: 20px;
-  margin-bottom: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.enter-button:hover {
-  background: white;
-  color: wheat;
-
+.enter-button a {
+  text-decoration: none;
+  color: #000000;
 }
 
-
+.enter-button a:hover {
+  color: #000000;
+  scale: 1.2;
+}
 
 /* ------> NAVBAR <------*/
 
 .navbar-toggler {
-  margin: 20px auto 0 auto;
-  background: red !important;
+  margin: 5px auto 0 auto;
   text-align: center;
+  border: none !important;
   padding: 6px;
 }
 
@@ -70,6 +81,11 @@
   border: none !important;
 
 }
+
+.hero .navbar-nav a {
+  color: #ffffff;
+}
+
 .navbar-nav {
   font-weight: 500;
   border-radius: 5px;
@@ -78,28 +94,16 @@
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
-  margin: 25px auto 40px auto;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 5px auto 40px auto;
 }
 
 .menu:hover {
   scale: 1.2;
 }
 
-
-h1 {
-  text-align: center;
-  padding-top: 40px;
-}
-
-
 #calendario {
   align-items: center;
   margin: 0 auto;
-}
-
-.container {
-margin-top: 20px;
 }
 
 .calendly-inline-widget {
@@ -108,7 +112,8 @@ margin-top: 20px;
   margin-top: 20px;
 }
 
- /* -----------------icons bar --------------------------- */
+
+ /* ----------------- ARROWS --------------------------- */
 
  .icon-bar {
    position: fixed;
@@ -129,18 +134,18 @@ margin-top: 20px;
 
  .icon-bar a:hover {
    background-color: var(--rgba-main);
-   color: var(--main-blue);
+   color: #D5D1CB;
  }
 
 
  .godown {
-   background: blue;
+   background: #D5D1CB;
    font-size: 15px !important;
    color: white;
  }
 
  .gotop {
-    background: #885df1;
+    background: #D5D1CB;
     font-size: 15px !important;
  }
 
@@ -151,6 +156,28 @@ margin-top: 20px;
   color: white;
   background-color: var(--main-branding-color);
   border-radius: 50px;
+}
+
+/* ---------- SOBRE ---------*/
+
+.sobre {
+  background: #FBF9F3;
+  padding: 100px 0;
+}
+
+.sobre h1 {
+  font-family: var(--second-font-family);
+  font-size: 12px;
+}
+
+.sobre h2 {
+  font-family: var(--main-font-family);
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.sobre h3 {
+  font-family: var(--main-font-family);
 }
 
 .booking {
